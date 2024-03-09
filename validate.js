@@ -65,7 +65,14 @@ function successFunc(re) {
     re.classList.remove('error');
     re.classList.add('success');
     const myformControl = re.parentElement;
-    const span = myformControl.querySelector('span');
+    const span = myformControl.querySelector('.error-text'); // Select the span with the error message
     console.log("Span element:", span); // Debugging output
-    span.innerText = ''; // Attempt to clear the error message
+    if (span) { // Check if the span element exists
+        span.innerText = ''; // Clear the error message
+    }
+
+    // Reset the font color back to normal
+    if (re === email) {
+        re.style.color = ""; // Reset the font color
+    }
 }
