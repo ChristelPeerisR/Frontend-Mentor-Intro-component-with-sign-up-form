@@ -56,7 +56,7 @@ function errorFunc(re, msg) {
     if (re !== email) {
         re.value = '';
     } else {
-        re.style.color = "hsl(0, 100%, 74%)";
+        re.style.color = "rgba(55, 204, 138, 255)";
     }
 }
 
