@@ -181,3 +181,51 @@ button:focus {
         width: 500px;
     }
 }
+
+@media screen and (max-width:400px){
+    body{
+        padding: 50px 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .learn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+    .log{
+        padding-top: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .learn h1{
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .learn p{
+        font-size: 15px;
+    }
+
+    form{
+        width: 350px;
+    }
+
+    .card{
+        padding-top: 30px;
+    }
+
+    .try button {
+        width: 350px;
+    }
+}
